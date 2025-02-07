@@ -148,7 +148,7 @@ if nav == "Prediction":
 
         query = query.reshape(1, 16)
         st.title(
-            "The predicted price of this configuration of car model: Rs " + str(int((model.predict(query)[0]) * 79.65)))
+            "The predicted price of this configuration of car model: Rs " + str(int(((model.predict(query)[0]) * 79.65)/3)))
         
 
     st.image("aj.jpg", width=150)
